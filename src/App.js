@@ -2,15 +2,19 @@
 // src/App.js
 import React from 'react';
 import HelloMessage from './components/HelloMessage';
-// import Menu from './components/Menu';
+import Card from './components/Card';
+import Menu from './components/Menu';
 // import Profile from './pages/profile/profile'
 
 function App() {
   return (
     <div className="App">
-      {/* <Menu /> */}
+      <Menu />
       <Card>      
         <HelloMessage name="Taylor" age={18} address="some address"/>
+      </Card>
+      <Card>      
+        <HelloMessage name="Jon" age={25} address="some other address"/>
       </Card>
       {/* <Profile /> */}
     </div>
